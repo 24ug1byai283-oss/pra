@@ -1,0 +1,134 @@
+ex 1
+git init 
+touch p1.txt
+git add p1.txt
+git commit -m "hello"
+ o/p insertion 0
+ notepad p1.txt-wtite and save then close
+  repeat 
+ git add p1.txt
+ git commit -m "hello"
+
+ ex-2
+ git init
+ notepad p1.txt
+ git add p1.txt
+ git commit -m "initial commit on master"
+ git branch feature-branch
+ git branch
+ git checkout feature-branch
+ notepad p1.txt(type this is from feature branch)
+ git add p1.txt
+ git commit -m "update from feature branch"
+ git checkout master 
+ git merge feature-branch
+
+ ex-3
+ git init 
+ notepad p3.txt
+ git add p3.txt
+ git commit -m "initial commit"
+ notepad p3.txt
+ git status
+ git stash
+ git status
+ git branch feature-branch 
+ git checkout feature-branch
+ git stash apply
+
+ exp-4
+ git clone <url> (git hub ka repo paste karna h)
+
+ ex-6
+ git init
+ notepad p6.txt
+ git add p6.txt
+ git commit -m "hy"
+ git branch "branchname"
+ git checkout "branchname"
+ notepad p6.txt
+ git add p6.txt
+ git commit -m "hello"
+ git checkout master
+ git merge "branchname"
+ git log
+
+ ex-11
+ git init
+ touch p1.txt
+ git add p1.txt
+ git commit -m "hello"
+ same till 4 more 
+ .
+ .
+ .
+ git log -n 5 (gives all the 5 commit)
+
+
+ex-12
+git init
+touch p1.txt
+git add p1.txt
+git commit -m "hey"
+git revert <commit id>
+[ESC-:q!]
+
+
+ex-10
+git init
+touch f1.txt
+git add f1.txt
+git commit -m "first commit" --author = "johndoe<johndoe@gmail.com>"
+git log --author = "johndoe --since="2025-01-01" --until="2025-12-31"
+
+ex-8
+
+echo "line 1" >>file.txt
+git add file.txt
+git commit -m "commit 1"
+echo "line 2" >>file.txt
+git add file.txt
+git commit -m "commit 2"
+echo "line 3" >>file.txt
+git add file.txt
+git commit -m "commit 3"
+git branch source-branch
+git checkout source-branch
+echo "feature A" >>file.txt
+git add file.txt
+git commit -m "feature A commit"
+echo "feature B" >>file.txt
+git add file.txt
+git commit -m "feature B commit"
+echo "feature C" >>file.txt
+git add file.txt
+git commit -m "feature C commit"
+git checkout master 
+git log --oneline source-branch
+git cherry-pick [feature A] ^..[feature C]
+
+ex-9
+git init 
+echo "hello" >file.txt
+git add file.txt
+commit -m "initial commit"
+git log --oneline
+git show SHI
+
+ex-7
+git init
+notepad p1.txt
+git add p1.txt
+git commit -m "hey"
+git branch feature-branch
+git branch
+git checkout feature-branch
+git tag v1.0
+git tag v2.0 [small id]
+
+o/p- NO o/p ->then
+
+ 
+
+ 
+ 
