@@ -1,0 +1,23 @@
+ex-5
+git init 
+notepad p1.txt
+git add p1.txt
+git commit -m "hyy"
+git branch dev
+git checkout dev
+echo "new" >>p1.txt
+git add p1.txt
+git commit -m "hlo"
+git remote add origin <URL>
+git remote -v
+git checkout master
+git push -u origin master
+git checkout dev
+git push -u origin dev
+git checkout dev
+git fetch origin 
+git rebase origin/dev
+git add .
+git rebase --continue
+git rebase --abort
+git push origin dev --force
